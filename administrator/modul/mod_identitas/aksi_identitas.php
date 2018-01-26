@@ -30,12 +30,13 @@ if ($module=='identitas' AND $act=='update'){
 									             googlemap      = '$_POST[googlemap]' 
 							WHERE id_identitas   = '$_POST[id]'");
   }else{
-    mysqli_query($koneksi, "UPDATE identitas SET nama_website   = '$_POST[nama_website]',
-	                                             email   		= '$_POST[email]',
-											     url       		= '$_POST[url]',
+    mysqli_query($koneksi, "UPDATE identitas SET nama_ pemilik  = '$_POST[nama_pemilik]',
+	                                             email          = '$_POST[email]',
+	                                             nama_website   = '$_POST[judul_website]',
 												 facebook   	= '$_POST[facebook]',
-                								 rekening  		= '$_POST[rekening]',
-                								 no_telp        = '$_POST[no_telp]',  
+                								 twitter_widget = '$_POST[twitter_widget]',
+												 twitter		= '$_POST[twitter]', 
+												 googleplus	 	= '$_POST[googleplus]',												 
 												 meta_deskripsi = '$_POST[meta_deskripsi]',
 											     meta_keyword   = '$_POST[meta_keyword]',
 									             googlemap      = '$_POST[googlemap]' 
