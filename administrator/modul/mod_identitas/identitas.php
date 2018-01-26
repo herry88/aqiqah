@@ -63,7 +63,9 @@
                     <button type=\"button\" class=\"btn btn-default pull-right\" onclick=\"self.history.back()\">Cancel</button>
                     
                   </div>
-            </div>";
+            </div>
+        </div>";
+
     break;  
         }
 
