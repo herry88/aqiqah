@@ -44,6 +44,12 @@
 			}
 		}
 		
+		elseif($_GET['module']=='tag'){
+			if($_SESSION['leveluser']=='admin'){
+				include "modul/mod_tag/tag.php";
+			}
+		}
+		
 		elseif($_GET['module']=='user'){
 			if($_SESSION['leveluser']=='admin' OR $_SESSION['leveluser']=='user'){
 				include "modul/mod_user/user.php";

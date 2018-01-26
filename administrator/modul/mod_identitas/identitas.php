@@ -53,7 +53,7 @@
                   <table class='table table-condensed table-bordered'>
                   <tbody>
                     <tr><th width='120px' scope='row'>Nama Pemilik</th>   <td><input type='text' class='form-control' name='nama_pemilik' value='$record[nama_pemilik]'></td></tr>
-                    <tr><th scope='row'>Nama Website</th>                        <td><input type='text' class='form-control' name='nama_website' value='$record[judul_website]'></td></tr>
+                    <tr><th scope='row'>Nama Website</th>                        <td><input type='text' class='form-control' name='judul_website' value='$record[judul_website]'></td></tr>
                     <tr><th scope='row'>Domain</th>                 <td><input type='text' class='form-control' name='alamat_website' value='$record[alamat_website]'></td></tr>
                     <tr><th scope='row'>Email</th><td><input name='email' class='form-control' type='text' value=\"$record[email]\"></td></tr>
                     <tr><th scope='row'>Sosial Network</th>               <td><input type='text' class='form-control' name='facebook' value='$record[facebook]'></td></tr>
@@ -62,7 +62,7 @@
                     <tr><th scope='row'>Google +</th>               <td><input type='text' class='form-control' name='googleplus' value='$record[googleplus]'></td></tr>    
                     <tr><th scope='row'>Meta Deskripsi</th>               <td><input type='text' class='form-control' name='meta_deskripsi' value='$record[meta_deskripsi]'></td></tr>
                     <tr><th scope='row'>Meta Keyword</th>                 <td><input type='text' class='form-control' name='meta_keyword' value='$record[meta_keyword]'></td></tr>
-                    <tr><th scope='row'>Google Maps</th>                  <td><textarea class='form-control' name='maps' style='height:80px'>$record[googlemap]</textarea></td></tr>
+                    <tr><th scope='row'>Google Maps</th>                  <td><textarea class='form-control' name='googlemap' style='height:80px'>$record[googlemap]</textarea></td></tr>
                     <tr><th scope='row'>Ganti Favicon</th>                      <td><input type='file' class='form-control' name='fupload' value='$record[favicon]'>
                     <hr style='margin:2px'>Favicon Saat ini : <img src=../$record[favicon] width=30></td></tr>
                   </tbody>
