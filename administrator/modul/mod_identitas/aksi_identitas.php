@@ -3,8 +3,8 @@ session_start();
 if (empty($_SESSION['username']) AND empty($_SESSION['passuser'])){
   echo "<script>document.location='index.php';</script>";
 }else{
-include "../../../config/koneksi.php";
-include "../../../config/fungsi_thumb.php";
+include "../../../config/connection.php";
+include "../../../config/fungsi_thumbnail.php";
 
 $module=$_GET['module'];
 $act=$_GET['act'];
