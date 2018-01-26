@@ -21,21 +21,25 @@ if ($module=='identitas' AND $act=='update'){
 	                                             email          = '$_POST[email]',
 	                                             nama_website   = '$_POST[judul_website]',
                 								 facebook       = '$_POST[facebook]',
-                								  
+                								 twitter_widget = '$_POST[twitter_widget]',
+												 twitter		= '$_POST[twitter]',
+												 googleplus	 	= '$_POST[googleplus]',	
                                                  meta_deskripsi = '$_POST[meta_deskripsi]',
                                                  meta_keyword   = '$_POST[meta_keyword]',
                                                  favicon        = '$nama_file',
-									             googlemap      = '$_POST[maps]' WHERE id_identitas   = '$_POST[id]'");
+									             googlemap      = '$_POST[googlemap]' 
+							WHERE id_identitas   = '$_POST[id]'");
   }else{
     mysqli_query($koneksi, "UPDATE identitas SET nama_website   = '$_POST[nama_website]',
-	                                    email   = '$_POST[email]',
-	                                    url       = '$_POST[url]',
-                										  facebook   = '$_POST[facebook]',
-                										  rekening  = '$_POST[rekening]',
-                								      no_telp        = '$_POST[no_telp]',  
-                                      meta_deskripsi = '$_POST[meta_deskripsi]',
-                                      meta_keyword   = '$_POST[meta_keyword]',
-									                    maps       	 = '$_POST[maps]' WHERE id_identitas   = '$_POST[id]'");
+	                                             email   		= '$_POST[email]',
+											     url       		= '$_POST[url]',
+												 facebook   	= '$_POST[facebook]',
+                								 rekening  		= '$_POST[rekening]',
+                								 no_telp        = '$_POST[no_telp]',  
+												 meta_deskripsi = '$_POST[meta_deskripsi]',
+											     meta_keyword   = '$_POST[meta_keyword]',
+									             googlemap      = '$_POST[googlemap]' 
+							WHERE id_identitas   = '$_POST[id]'");
   }
   header('location:../../media.php?module='.$module);
 }
