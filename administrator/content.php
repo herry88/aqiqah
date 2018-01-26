@@ -31,6 +31,12 @@
 				include "modul/mod_beranda/beranda.php";
 			}
 		}
+
+		elseif($_GET['module']=='identitas'){
+			if($_SESSION['leveluser']=='admin'){
+				include "modul/mod_identitas/identitas.php";
+			}
+		}
 		
 		elseif($_GET['module']=='modul'){
 			if($_SESSION['leveluser']=='admin'){
