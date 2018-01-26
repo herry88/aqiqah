@@ -40,9 +40,10 @@
               <div class='col-md-12'>
                   <table class='table table-condensed table-bordered'>
                   <tbody>
-                    <tr><th width='120px' scope='row'>Nama Website</th>   <td><input type='text' class='form-control' name='nama_website' value='$record[nama_website]'></td></tr>
-                    <tr><th scope='row'>Email</th>                        <td><input type='text' class='form-control' name='email' value='$record[email]'></td></tr>
-                    <tr><th scope='row'>Domain</th>                 <td><input type='text' class='form-control' name='url' value='$record[url]'></td></tr>
+                    <tr><th width='120px' scope='row'>Nama Pemilik</th>   <td><input type='text' class='form-control' name='nama_website' value='$record[nama_pemilik]'></td></tr>
+                    <tr><th scope='row'>Nama Website</th>                        <td><input type='text' class='form-control' name='email' value='$record[judul_website]'></td></tr>
+                    <tr><th scope='row'>Domain</th>                 <td><input type='text' class='form-control' name='url' value='$record[alamat_website]'></td></tr>
+                    <tr><th scope='row'>Email</th><td><input name='email' class='form-control' type='text' value=\"$record[email]\"></td></tr>
                     <tr><th scope='row'>Sosial Network</th>               <td><input type='text' class='form-control' name='facebook' value='$record[facebook]'></td></tr>
                     <tr><th scope='row'>No. Rekening</th>                 <td><input type='text' class='form-control' name='rekening' value='$record[rekening]'></td></tr>
                     <tr><th scope='row'>No Telpon</th>                    <td><input type='text' class='form-control' name='no_telp' value='$record[no_telp]'></td></tr>
@@ -63,3 +64,5 @@
             </div>";
     break;  
         }
+
+}
