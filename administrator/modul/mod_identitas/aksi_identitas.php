@@ -19,10 +19,9 @@ if ($module=='identitas' AND $act=='update'){
     UploadFavicon($nama_file);
     mysqli_query($koneksi, "UPDATE identitas SET nama_ pemilik  = '$_POST[nama_pemilik]',
 	                                             email          = '$_POST[email]',
-	                                             nama_website   = '$_POST[url]',
+	                                             nama_website   = '$_POST[judul_website]',
                 								 facebook       = '$_POST[facebook]',
-                								 rekening       = '$_POST[rekening]',
-                								 no_telp        = '$_POST[no_telp]',  
+                								  
                                                  meta_deskripsi = '$_POST[meta_deskripsi]',
                                                  meta_keyword   = '$_POST[meta_keyword]',
                                                  favicon        = '$nama_file',
