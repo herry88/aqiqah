@@ -58,7 +58,7 @@
               </div>
               <div class='box-footer'>
                     <button type='submit' name='upload' class='btn btn-info'>Update</button>
-                    <a href='index.php'><button type='button' class='btn btn-default pull-right'>Cancel</button></a>
+                    <button type=\"button\" class=\"btn btn-default pull-right\" onclick=\"self.history.back()\">Cancel</button>
                     
                   </div>
             </div>";
